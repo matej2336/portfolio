@@ -154,3 +154,28 @@ footer {
 .dark-mode .project-card a {
   color: #f4f4f4;
 }
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #1abc9c;
+}
+
+/* Dark mode links */
+.dark-mode .project-links a {
+  color: #f4f4f4;
+}
+
+.dark-mode .project-links a:hover {
+  color: #1abc9c;
+}
