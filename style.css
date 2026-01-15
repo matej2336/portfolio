@@ -179,3 +179,9 @@ footer {
 .dark-mode .project-links a:hover {
   color: #1abc9c;
 }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+repeat(auto-fit, minmax(250px, 1fr))
