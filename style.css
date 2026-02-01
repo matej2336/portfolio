@@ -184,4 +184,3 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-repeat(auto-fit, minmax(250px, 1fr))
