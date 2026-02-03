@@ -19,6 +19,6 @@ jobs:
 
           curl -H "Content-Type: application/json" \
             -d "{
-              \"content\": \"📦 **$REPO**\n👤 $AUTHOR\n💬 $COMMIT_MSG\n🔗 $URL\"
+              \"content\": \"📦 **$REPO**\n👤 $AUTHOR\n💬 $COMMIT_MSG\"
             }" \
             $DISCORD_WEBHOOK
