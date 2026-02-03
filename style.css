@@ -249,3 +249,20 @@ footer {
 .dark-mode .project-tech li {
   background: #3a3a3a;
 }
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-grid span {
+  background: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Dark mode */
+.dark-mode .skills-grid span {
+  background: #2e2e2e;
+}
