@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matej Hudák Portfolio</title>
+<header class="hero">
+  <h1>Matej Hudák</h1>
+  <p>Frontend Developer</p>
+  <title>Matej Hudák | Frontend Developer</title>
+  <link rel="icon" href="/settings.png">
+  <div class="hero-links">
+    <a href="https://github.com/matej2336" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/matej2336" target="_blank">LinkedIn</a>
+    <a href="Matej-Hudak-CV.pdf" download>Download CV</a>
+  </div>
+
+  <a href="#projects" class="cta-btn">View My Work</a>
   <link rel="stylesheet" href="style.css" />
-</head>
+</header>
 <body>
 
   <header>
@@ -23,19 +31,28 @@
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m learning frontend development and building real projects from scratch.
-    </p>
-  </section>
+  <h2>About Me</h2>
+  <p>
+    I’m a frontend developer focused on building clean, responsive, and user-friendly web applications.
+    I enjoy turning ideas into real products using HTML, CSS, and JavaScript.
+  </p>
+  <p>
+    I’m currently expanding my skills by building real projects and learning modern frontend tools
+    with a strong focus on code quality and usability.
+  </p>
+</section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (soon)</li>
-    </ul>
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Git & GitHub</span>
+    <span>Responsive Design</span>
+    <span>DOM Manipulation</span>
+  </div>
   </section>
 
   <section id="projects">
@@ -44,27 +61,28 @@
   <div class="projects-grid">
 
     <div class="project-card">
-      <img src="weather-app.png" alt="Weather App Screenshot" class="project-img" />
-      <h3>Weather App</h3>
-      <p>A JavaScript app that shows the current weather for any city using an API.</p>
-      <div class="project-links">
-        <a href="https://github.com/YourUsername/weather-app" target="_blank">View Repo</a>
-        <a href="https://YourUsername.github.io/weather-app" target="_blank">Live Demo</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="todo-app.png" alt="To-Do App Screenshot" class="project-img" />
+    <img src="/todo screenshot.png" alt="To-Do App Screenshot">
       <h3>To-Do App</h3>
-      <p>A JavaScript To-Do List app with add, delete, and mark as done.</p>
+      <p>
+        A responsive JavaScript To-Do application with task persistence using localStorage.
+        Supports adding, completing, deleting tasks and keyboard input.
+      </p>
+
+      <ul class="project-tech">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
       <div class="project-links">
-        <a href="https://github.com/YourUsername/todo-app" target="_blank">View Repo</a>
-        <a href="https://YourUsername.github.io/todo-app" target="_blank">Live Demo</a>
+        <a href="https://github.com/matej2336/todo-app" target="_blank">GitHub</a>
+        <a href="https://matej2336.github.io/todo-app/" target="_blank">Live Demo</a>
       </div>
     </div>
 
   </div>
 </section>
+
 
 
 
