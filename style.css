@@ -320,3 +320,13 @@ footer {
   margin-bottom: 1rem;
   display: block;
 }
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-buttons a {
+  text-align: center;
+}
