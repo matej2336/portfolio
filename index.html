@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="hero">
-  <h1>Matej Hudák</h1>
-  <p>Frontend Developer</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Matej Hudák | Frontend Developer</title>
-  <link rel="icon" href="settings.png" type="image/png">
-  <div class="hero-links">
-    <a href="https://github.com/matej2336" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/matej2336" target="_blank">LinkedIn</a>
-    <a href="Matej-Hudak-CV.pdf" download>Download CV</a>
-  </div>
+  <meta name="description" content="Matej Hudák – Frontend Developer. Projects built with HTML, CSS, JavaScript, and APIs." />
 
-  <a href="#projects" class="cta-btn">View My Work</a>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Matej Hudák | Frontend Developer" />
+  <meta property="og:description" content="Portfolio featuring projects like a Weather App (API) and To-Do App." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://matej2336.github.io/portfolio/" />
+  <!-- Only keep this if the image really exists at that exact URL -->
+  <!-- <meta property="og:image" content="https://matej2336.github.io/portfolio/images/preview.png" /> -->
+
+  <link rel="icon" href="settings.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
-</header>
+</head>
+
 <body>
-
-  <header>
+  <!-- HERO -->
+  <header class="hero">
     <h1>Matej Hudák</h1>
-    <p>Future Frontend Developer</p>
+    <p>Frontend Developer</p>
 
-    <button id="theme-toggle">Toggle Dark Mode</button>
+    <div class="hero-links">
+      <a href="https://github.com/matej2336" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/matej2336" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="Matej-Hudak-CV.pdf" download>Download CV</a>
+    </div>
+
+    <a href="#projects" class="cta-btn">View My Work</a>
+  </header>
+
+  <!-- NAV + THEME TOGGLE -->
+  <header class="site-header">
+    <button id="theme-toggle" class="btn secondary" type="button">Toggle Dark Mode</button>
 
     <nav>
       <a href="#about">About</a>
@@ -30,111 +46,104 @@
     </nav>
   </header>
 
+  <!-- ABOUT -->
   <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I’m a frontend developer focused on building clean, responsive, and user-friendly web applications.
-    I enjoy turning ideas into real products using HTML, CSS, and JavaScript.
-  </p>
-  <p>
-    I’m currently expanding my skills by building real projects and learning modern frontend tools
-    with a strong focus on code quality and usability.
-  </p>
-</section>
-
-  <section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Git & GitHub</span>
-    <span>Responsive Design</span>
-    <span>DOM Manipulation</span>
-  </div>
+    <h2>About Me</h2>
+    <p>
+      I’m a frontend developer focused on building clean, responsive, and user-friendly web applications.
+      I enjoy turning ideas into real products using HTML, CSS, and JavaScript.
+    </p>
+    <p>
+      I’m currently expanding my skills by building real projects and learning modern frontend tools
+      with a strong focus on code quality and usability.
+    </p>
   </section>
 
-
-  <section id="projects">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card">
-    <div class="project-card featured">
-    <span class="featured-badge">Featured</span>
-    <img src="todo screenshot.png" alt="To-Do App Screenshot">
-      <h3>To-Do App</h3>
-      <p>
-        A responsive JavaScript To-Do application with task persistence using localStorage.
-        Supports adding, completing, deleting tasks and keyboard input.
-      </p>
-
-      <ul class="project-tech">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/matej2336/todo-app" target="_blank">GitHub</a>
-        <a href="https://matej2336.github.io/todo-app/" target="_blank">Live Demo</a>
-      </div>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git & GitHub</span>
+      <span>Responsive Design</span>
+      <span>DOM Manipulation</span>
     </div>
-      </div>  
-  </div>
+  </section>
 
-  <div class="project-card featured">
-    <span class="featured-badge">Featured</span>
-  <img src="weather-preview.png" alt="Weather App preview" class="project-img" />
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
 
-  <h3>Weather App</h3>
-  <p>
-    A modern weather dashboard using the OpenWeather API with async/await,
-    dark mode, hourly view, and 5-day forecast. Built with clean code principles and responsive design.
-  </p>
+    <div class="projects-grid">
 
-  <ul class="project-tech">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>API</li>
-  </ul>
+      <!-- Featured: Weather App -->
+      <div class="project-card featured">
+        <span class="featured-badge">Featured</span>
 
-  <div class="project-links">
-    <a href="https://matej2336.github.io/weather-app/" target="_blank" class="btn primary">Live Demo</a>
-    <a href="https://github.com/matej2336/weather-app" target="_blank" class="btn secondary">GitHub</a>
-  </div>
-</div>
+        <img src="weather-preview.png" alt="Weather App preview" class="project-img" />
 
-</section>
+        <h3>Weather App</h3>
+        <p>
+          A modern weather dashboard using the OpenWeather API with async/await,
+          dark mode, hourly view, and 5-day forecast.
+        </p>
 
+        <ul class="project-tech">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>API</li>
+        </ul>
 
+        <div class="project-links">
+          <a href="https://matej2336.github.io/weather-app/" target="_blank" rel="noopener" class="btn primary">Live Demo</a>
+          <a href="https://github.com/matej2336/weather-app" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+        </div>
+      </div>
 
+      <!-- To-Do App -->
+      <div class="project-card">
+        <img src="todo screenshot.png" alt="To-Do App preview" class="project-img" />
 
+        <h3>To-Do App</h3>
+        <p>
+          A responsive JavaScript To-Do application with task persistence using localStorage.
+          Supports adding, completing, deleting tasks and keyboard input.
+        </p>
+
+        <ul class="project-tech">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://matej2336.github.io/todo-app/" target="_blank" rel="noopener" class="btn primary">Live Demo</a>
+          <a href="https://github.com/matej2336/todo-app" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact">
-  <h2>Contact</h2>
-  <p>If you’d like to work together, feel free to reach out.</p>
+    <h2>Contact</h2>
+    <p>If you’d like to work together, feel free to reach out.</p>
 
-  <div class="contact-buttons">
-    <a class="btn primary" href="mailto:matej.hudak@example.com">Email Me</a>
-    <a class="btn secondary" href="https://github.com/matej2336" target="_blank">GitHub</a>
-    <a class="btn secondary" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
-  </div>
-</section>
+    <div class="contact-buttons">
+      <a class="btn primary" href="mailto:matej.hudak@example.com">Email Me</a>
+      <a class="btn secondary" href="https://github.com/matej2336" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/matej2336" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <p>© 2026 Matej Hudák. Built with HTML, CSS & JavaScript.</p>
+  </footer>
 
   <script src="script.js"></script>
-
-
-
-<footer class="footer">
-  <p>© 2026 Matej Hudák. Built with HTML, CSS & JavaScript.</p>
-</footer>
-
-
-
-
 </body>
 </html>
